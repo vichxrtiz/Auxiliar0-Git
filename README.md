@@ -75,7 +75,7 @@ def listarTareas(self):
 
 4. **Persona 🅱️** actualizará el repositorio remoto con sus cambios según el paso 2. Al hacer `git push` aparecerá un mensaje de error.
 
-Esto pasará porque **Persona 🅰️** hizo cambios a un archivos, cambios que **Persona 🅱️** no ha descargado. Para arreglar esto, **Persona 🅱️** deberá hacer `git pull`. Al hacer esto, juntará (merge) la versión del repostorio remoto con la versión local. Por esta razón aparecerá un editor con un mensaje parecido a este:
+Esto pasará porque **Persona 🅰️** hizo cambios a un archivos, cambios que **Persona 🅱️** no ha descargado. Para arreglar esto, **Persona 🅱️** deberá hacer `git pull`. Al hacer esto, juntará (merge) la versión del repositorio remoto con la versión local. Por esta razón aparecerá un editor con un mensaje parecido a este:
 
 ![]()
 
@@ -102,7 +102,7 @@ def listarTareas(self):
             print(f"[ ] {tarea.obtenerNombre()}" ) <<<<< y esta
 ```
 
-2. Persona B actualizará el repositorio remoto segúin las instrucciones de la parte 3, páso 2.
+2. Persona B actualizará el repositorio remoto según las instrucciones de la parte 3, páso 2.
 
 3. Persona A (SIN DESCARGAR LOS CAMBIOS DE LA OTRA PERSONA) editará la siguiente línea del mismo archivo:
 
