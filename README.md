@@ -135,9 +135,20 @@ def listarTareas(self):
             print(f"La tarea {tarea.obtenerNombre()} no está lista")
 ```
 
-4. Persona A actualizará el repositorio remoto según las instrucciones de la parte 3, paso 2. Al hacer `git push`, Persona A verá que hay un conflicto como pasó en la parte anterior. Para resolver esto se debe hacer git pull y aparecerá este mensaje:
+4. Persona A actualizará el repositorio remoto según las instrucciones de la parte 3, paso 2. Al hacer `git push`, Persona A verá que hay un conflicto como pasó en la parte anterior. Para resolver esto se debe hacer git pull y aparecerá un mensaje como este:
 
-![]()
+```bash
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 2), reused 2 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 272 bytes | 4.00 KiB/s, done.
+From https://github.com/joelriquelme/Auxiliar0-Git
+   5acaef5..7a070c1  main       -> origin/main
+Auto-merging usuario.py
+CONFLICT (content): Merge conflict in usuario.py
+Automatic merge failed; fix conflicts and then commit the result.
+```
 
 Esto pasa cuando dos personas editan en mismo archivo del proyecto. Muchas veces Git puede solucionar estos conflictos automáticamente, pero otras veces la persona que realiza el push deberá decidir cuál será el código definitivo (luego de conversar con todo el equipo de desarrollo).
 
