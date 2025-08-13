@@ -77,7 +77,18 @@ def listarTareas(self):
 
 Esto pasará porque **Persona 🅰️** hizo cambios a un archivos, cambios que **Persona 🅱️** no ha descargado. Para arreglar esto, **Persona 🅱️** deberá hacer `git pull`. Al hacer esto, juntará (merge) la versión del repositorio remoto con la versión local. Por esta razón aparecerá un editor con un mensaje parecido a este:
 
-![]()
+```bash
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 304 bytes | 3.00 KiB/s, done.
+From https://github.com/joelriquelme/Auxiliar0-Git
+   392b5d8..ea7228e  main       -> origin/main
+Merge made by the 'ort' strategy.
+ tarea.py | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+```
 
 > Si no hay instrucciones para salir de ahí, prueba escribiendo ":wq" y luego presiona enter. Si no funciona, pide ayuda.
 
